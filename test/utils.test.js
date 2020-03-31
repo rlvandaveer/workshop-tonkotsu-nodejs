@@ -31,7 +31,7 @@ describe("Utils", function() {
       assert.doesNotThrow(() => {
         utils.greetings("Valid!");
       }, Error);
-    });
+	});
   });
 
   describe("makeHeading", function() {
