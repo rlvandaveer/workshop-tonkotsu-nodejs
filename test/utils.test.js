@@ -38,6 +38,12 @@ describe("Utils", function() {
 		  utils.greetings("Hi");
 		}, Error);
 	  });
+
+	it("Snazzy", function() {
+		assert.doesNotThrow(() => {
+		  utils.greetings("Snazzy!");
+		}, Error);
+	  });
   });
 
   describe("makeHeading", function() {
