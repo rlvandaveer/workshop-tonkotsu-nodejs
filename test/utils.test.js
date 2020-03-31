@@ -32,12 +32,6 @@ describe("Utils", function() {
         utils.greetings("Valid!");
       }, Error);
 	});
-
-	it("Does not error", function() {
-		assert.doesNotThrow(() => {
-		  throw "Error";
-		}, Error);
-	  });
   });
 
   describe("makeHeading", function() {
