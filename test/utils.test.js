@@ -31,7 +31,13 @@ describe("Utils", function() {
       assert.doesNotThrow(() => {
         utils.greetings("Valid!");
       }, Error);
-    });
+	});
+
+	it("Does not error", function() {
+		assert.doesNotThrow(() => {
+		  throw "Error";
+		}, Error);
+	  });
   });
 
   describe("makeHeading", function() {
